@@ -1,0 +1,16 @@
+inherit emacs
+
+DESCRIPTION="GNU typing tutor"
+HOMEPAGE="http://www.gnu.org/software/gtypist/"
+SRC_URI="mirror://gnu/${PN}/${P}.tar.bz2"
+
+DIFF_EXCLUDES="*.info *.texi stamp-*"
+
+src_install() {
+	cd ${B}
+	cyginstall
+
+	cd ${S}/tools
+	exeinto /usr/share/gtypist/tools
+	doexe typcombine typv1tov2 ktouch2typ.pl gtypist.pm tt2typ.pl findwords
+}
