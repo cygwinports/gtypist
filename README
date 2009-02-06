@@ -5,21 +5,22 @@ keyboards.  Includes typefortune, a perl script for creating new
 lessons, and an emacs major-mode.
 
 Runtime requirements:
-  cygwin-1.5.25-11
-  libintl8-0.15-1
-  libncurses8-5.5-2
-  perl-5.10.0-3  (for typefortune)
+  cygwin-1.5.25-15
+  libintl8-0.17-2
+  libncurses8-5.5-3
+  perl-5.10.0-5  (for typefortune)
 
 Build requirements:
 (besides corresponding -devel packages)
-  autoconf2.5-2.61-1
-  automake1.10-1.10.1-1
-  binutils-20080523-1
+  autoconf2.5-2.63-1
+  automake1.10-1.10.1-2
+  binutils-20080624-2
   bison-2.3-1
-  cygport-0.3.11-1
+  cygport-0.4.3-1
   flex-2.5.35-1
   gawk-3.1.6-1
   gcc-core-3.4.4-3
+  help2man-1.36.4-2
   make-3.81-1
   sed-4.1.5-2
 
@@ -32,33 +33,32 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack gtypist-2.8.1-X-src.tar.bz2
+  unpack gtypist-2.8.2-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./gtypist-2.8.1-X.cygport all
+  cygport ./gtypist-2.8.2-X.cygport all
 
 This will create:
-  /usr/src/gtypist-2.8.1-X-src.tar.bz2
-  /usr/src/gtypist-2.8.1-X.tar.bz2
+  /usr/src/gtypist-2.8.2-X-src.tar.bz2
+  /usr/src/gtypist-2.8.2-X.tar.bz2
 
 -------------------------------------------
 
 Files included in the binary package:
 
-  /etc/postinstall/gtypist.sh
   /usr/bin/gtypist.exe
   /usr/bin/typefortune
-  /usr/share/doc/gtypist-2.8.1/ABOUT-NLS
-  /usr/share/doc/gtypist-2.8.1/AUTHORS
-  /usr/share/doc/gtypist-2.8.1/COPYING
-  /usr/share/doc/gtypist-2.8.1/ChangeLog
-  /usr/share/doc/gtypist-2.8.1/INSTALL
-  /usr/share/doc/gtypist-2.8.1/NEWS
-  /usr/share/doc/gtypist-2.8.1/README
-  /usr/share/doc/gtypist-2.8.1/THANKS
-  /usr/share/doc/gtypist-2.8.1/TODO
-  /usr/share/emacs/site-lisp/gtypist-mode.el
+  /usr/share/doc/gtypist-2.8.2/ABOUT-NLS
+  /usr/share/doc/gtypist-2.8.2/AUTHORS
+  /usr/share/doc/gtypist-2.8.2/COPYING
+  /usr/share/doc/gtypist-2.8.2/ChangeLog
+  /usr/share/doc/gtypist-2.8.2/INSTALL
+  /usr/share/doc/gtypist-2.8.2/NEWS
+  /usr/share/doc/gtypist-2.8.2/QUESTIONS
+  /usr/share/doc/gtypist-2.8.2/README
+  /usr/share/doc/gtypist-2.8.2/THANKS
+  /usr/share/doc/gtypist-2.8.2/TODO
   /usr/share/gtypist/cs.typ
   /usr/share/gtypist/d.typ
   /usr/share/gtypist/demo.typ
@@ -93,6 +93,7 @@ Files included in the binary package:
   /usr/share/locale/cs/LC_MESSAGES/gtypist.mo
   /usr/share/locale/de/LC_MESSAGES/gtypist.mo
   /usr/share/locale/es/LC_MESSAGES/gtypist.mo
+  /usr/share/locale/eu/LC_MESSAGES/gtypist.mo
   /usr/share/locale/fi/LC_MESSAGES/gtypist.mo
   /usr/share/locale/fr/LC_MESSAGES/gtypist.mo
   /usr/share/locale/nl/LC_MESSAGES/gtypist.mo
@@ -105,6 +106,9 @@ Files included in the binary package:
 ------------------
 
 Port Notes:
+
+----- version 2.8.2-1 -----
+Version bump.
 
 ----- version 2.8.1-1 -----
 Version bump.

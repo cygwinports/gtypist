@@ -1,10 +1,12 @@
-inherit emacs
-
 DESCRIPTION="GNU typing tutor"
 HOMEPAGE="http://www.gnu.org/software/gtypist/"
 SRC_URI="mirror://gnu/${PN}/${P}.tar.bz2"
+PATCH_URI="2.8.1-parallel-make.patch
+           2.8.1-vpath.patch"
 
-DIFF_EXCLUDES="*.info *.texi stamp-*"
+DIFF_EXCLUDES="*.info *.texi stamp-* intl m4 po"
+
+CYGCONF_ARGS="EMACS=no"
 
 src_install() {
 	cd ${B}
@@ -14,3 +16,4 @@ src_install() {
 	exeinto /usr/share/gtypist/tools
 	doexe typcombine typv1tov2 ktouch2typ.pl gtypist.pm tt2typ.pl findwords
 }
+DOCS="QUESTIONS"
