@@ -33,15 +33,15 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack gtypist-2.8.2-X-src.tar.bz2
+  unpack gtypist-2.8.3-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./gtypist-2.8.2-X.cygport all
+  cygport ./gtypist-2.8.3-X.cygport all
 
 This will create:
-  /usr/src/gtypist-2.8.2-X-src.tar.bz2
-  /usr/src/gtypist-2.8.2-X.tar.bz2
+  /usr/src/gtypist-2.8.3-X-src.tar.bz2
+  /usr/src/gtypist-2.8.3-X.tar.bz2
 
 -------------------------------------------
 
@@ -49,16 +49,16 @@ Files included in the binary package:
 
   /usr/bin/gtypist.exe
   /usr/bin/typefortune
-  /usr/share/doc/gtypist-2.8.2/ABOUT-NLS
-  /usr/share/doc/gtypist-2.8.2/AUTHORS
-  /usr/share/doc/gtypist-2.8.2/COPYING
-  /usr/share/doc/gtypist-2.8.2/ChangeLog
-  /usr/share/doc/gtypist-2.8.2/INSTALL
-  /usr/share/doc/gtypist-2.8.2/NEWS
-  /usr/share/doc/gtypist-2.8.2/QUESTIONS
-  /usr/share/doc/gtypist-2.8.2/README
-  /usr/share/doc/gtypist-2.8.2/THANKS
-  /usr/share/doc/gtypist-2.8.2/TODO
+  /usr/share/doc/gtypist-2.8.3/ABOUT-NLS
+  /usr/share/doc/gtypist-2.8.3/AUTHORS
+  /usr/share/doc/gtypist-2.8.3/COPYING
+  /usr/share/doc/gtypist-2.8.3/ChangeLog
+  /usr/share/doc/gtypist-2.8.3/INSTALL
+  /usr/share/doc/gtypist-2.8.3/NEWS
+  /usr/share/doc/gtypist-2.8.3/QUESTIONS
+  /usr/share/doc/gtypist-2.8.3/README
+  /usr/share/doc/gtypist-2.8.3/THANKS
+  /usr/share/doc/gtypist-2.8.3/TODO
   /usr/share/gtypist/cs.typ
   /usr/share/gtypist/d.typ
   /usr/share/gtypist/demo.typ
@@ -107,7 +107,7 @@ Files included in the binary package:
 
 Port Notes:
 
------ version 2.8.2-1 -----
+----- version 2.8.3-1 -----
 Version bump.
 
 ----- version 2.8.1-1 -----
