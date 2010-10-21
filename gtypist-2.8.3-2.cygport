@@ -1,12 +1,16 @@
 DESCRIPTION="GNU typing tutor"
 HOMEPAGE="http://www.gnu.org/software/gtypist/"
 SRC_URI="mirror://gnu/${PN}/${P}.tar.bz2"
-PATCH_URI="2.8.1-parallel-make.patch
-           2.8.1-vpath.patch"
 
-DIFF_EXCLUDES="*.info *.texi stamp-* intl m4 po"
+PATCH_URI="
+	2.8.1-parallel-make.patch
+	2.8.1-vpath.patch
+	2.8.3-ncurses-compile.patch
+"
 
-CYGCONF_ARGS="EMACS=no"
+DIFF_EXCLUDES="*.info *.texi stamp-*"
+
+CYGCONF_ARGS="ac_cv_lib_curses_wbkgdset=no"
 
 src_install() {
 	cd ${B}
