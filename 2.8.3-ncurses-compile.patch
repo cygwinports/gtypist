@@ -16,7 +16,7 @@
  #include <curses.h>
  #else
 -#include <ncurses.h>
-+#include <ncurses/curses.h>
++#include <ncursesw/curses.h>
  #endif
  #include "error.h"
  
