@@ -1,0 +1,11 @@
+--- origsrc/gtypist-2.9/src/gtypist.c	2011-10-30 18:24:25.000000000 -0500
++++ src/gtypist-2.9/src/gtypist.c	2011-11-01 19:05:31.075916200 -0500
+@@ -2190,7 +2190,7 @@ int main( int argc, char **argv )
+ 
+   // Quick hack to get rid of the escape delays
+ #ifdef __NCURSES_H
+-  ESCDELAY = 1;
++  set_escdelay(1);
+ #endif
+ 
+   /* set up colour pairs if possible */
