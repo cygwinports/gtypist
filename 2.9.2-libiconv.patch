@@ -1,0 +1,11 @@
+--- origsrc/gtypist-2.9.2/src/Makefile.am	2012-12-27 17:11:52.737327700 -0600
++++ src/gtypist-2.9.2/src/Makefile.am	2012-12-27 17:20:37.254328300 -0600
+@@ -8,7 +8,7 @@
+ bin_PROGRAMS = gtypist
+ gtypist_SOURCES = gtypist.c cursmenu.c script.c error.c getopt.c getopt1.c \
+ 		cursmenu.h error.h getopt.h gettext.h gtypist.h script.h utf8.c utf8.h
+-gtypist_LDADD = @LIBINTL@
++gtypist_LDADD = @LIBINTL@ @LIBICONV@
+ 
+ AM_CPPFLAGS = -I../intl \
+   -DDATADIR=\"$(pkgdatadir)\" \

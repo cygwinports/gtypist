@@ -1,6 +1,0 @@
-category: Text
-requires: libiconv2 libintl8 libncursesw10 perl
-sdesc: "GNU console-mode typing tutor"
-ldesc: "GNU Typist is a typing tutor with several lessons for different
-keyboards and languages.  Includes typefortune, a perl script for
-writing new lessons, and an emacs major-mode."

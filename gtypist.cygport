@@ -1,4 +1,11 @@
-DESCRIPTION="GNU typing tutor"
+NAME="gtypist"
+VERSION=2.9.2
+RELEASE=1
+CATEGORY="Text"
+SUMMARY="GNU console-mode typing tutor"
+DESCRIPTION="GNU Typist is a typing tutor with several lessons for different
+keyboards and languages.  Includes typefortune, a perl script for writing new
+lessons, and an emacs major-mode."
 HOMEPAGE="http://www.gnu.org/software/gtypist/"
 SRC_URI="mirror://gnu/${PN}/${P}.tar.xz"
 
@@ -6,6 +13,7 @@ PATCH_URI="
 	2.8.1-parallel-make.patch
 	2.9-vpath.patch
 	2.9-ncurses-abi6.patch
+	2.9.2-libiconv.patch
 "
 
 DIFF_EXCLUDES="*.info *.texi stamp-*"
