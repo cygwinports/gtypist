@@ -1,5 +1,5 @@
 NAME="gtypist"
-VERSION=2.9.2
+VERSION=2.9.3
 RELEASE=1
 CATEGORY="Text"
 SUMMARY="GNU console-mode typing tutor"
@@ -16,8 +16,10 @@ PATCH_URI="
 	2.9.2-libiconv.patch
 "
 
+DISTCLEANFILES="m4/Makefile"
 DIFF_EXCLUDES="*.info *.texi stamp-*"
 
+WANT_AUTOMAKE=1.12
 CYGCONF_ARGS="ac_cv_lib_curses_wbkgdset=no"
 
 src_install() {
